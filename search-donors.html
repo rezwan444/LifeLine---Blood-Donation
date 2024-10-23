@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LifeLine - Blood Donation</title>
+    <title>Search Donors</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -20,21 +20,10 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
-
-        .banner {
-            background-image: url('image/banner.webp');
-            background-size: cover;
-            object-fit: cover;
-        }
-
-        .font {
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        }
     </style>
 </head>
 
 <body>
-
     <!-- header section start -->
     <header class=" text-white">
         <div class="bg-[#EB2C29]">
@@ -70,11 +59,14 @@
                             </li>
                             <li class="transform transition duration-300 hover:scale-110"><a href="about-us.html">About
                                     Us</a></li>
-                            <li class="transform transition duration-300 hover:scale-110"><a href="search-donors.html">Search Donors</a>
+                            <li class="transform transition duration-300 hover:scale-110"><a
+                                    href="search-donors.html">Search
+                                    Donors</a>
                             </li>
                             <li class="transform transition duration-300 hover:scale-110"><a href="#">Add Blood
                                     Request</a></li>
-                            <li class="transform transition duration-300 hover:scale-110"><a href="#">Register</a></li>
+                            <li class="transform transition duration-300 hover:scale-110"><a href="#">Register</a>
+                            </li>
                             <li class="transform transition duration-300 hover:scale-110"><a href="#">Login</a></li>
                         </ul>
                     </div>
@@ -92,125 +84,15 @@
                     </div>
                 </div>
             </nav>
-
         </div>
-        <!-- banner section start -->
-        <section class="banner shadow-lg shadow-gray-500/50">
-            <div class="xl:w-10/12 mx-auto py-16 xl:py-32 px-5 md:px-10 lg:px-20 xl:px-0">
-                <h1 class="font font-semibold text-[1.7rem] md:text-[2.5rem] leading-10">SMS-based platform to connect
-                    <br> blood
-                    searchers with donors
-                </h1>
-
-                <p class="mt-2 font-semibold md:text-lg">LifeLine - Blood Donation is a real-time free platform to help
-                    blood <br> searchers connect voluntary
-                    blood donors around Bangladesh.</p>
-
-                <div class="flex mt-16 gap-4">
-                    <a href="#">
-                        <button id="loadingButton3"
-                        class="bg-[#EB2C29] px-1 md:px-6 rounded-md py-3 font-semibold flex items-center space-x-1">
-                            <span id="spinner3" class="hidden  loading loading-spinner loading-md"></span>
-                            <span>Join as a Donor</span>
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button id="loadingButton4"
-                         class="bg-white text-red-600 rounded-md py-3 font-semibold px-1 md:px-6 flex items-center space-x-1">
-                         <span id="spinner4" class="hidden  loading loading-spinner loading-md"></span>
-                         <span>Search Donors</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- banner section end -->
     </header>
-    <!-- header section end -->
 
-    <!-- main section start -->
     <main>
-        <!-- learn more section -->
-        <section class="bg-[#FAFAFA] py-10 lg:py-20 px-5 md:px-10 lg:px-20 xl:px-0">
-            <div class="xl:w-10/12 mx-auto">
-                <div class="md:flex justify-between gap-8">
-                    <div>
-                        <h1 class="text-2xl font-semibold">What is LifeLine - Blood Donation?</h1>
-
-                        <p class="mt-4">LifeLine - Blood Donation is an automated blood service that <br> connects blood
-                            searchers
-                            with
-                            voluntary donors in a moment <br> through SMS. LifeLine - Blood Donation is always a free
-                            service for all.</p>
-                    </div>
-
-                    <div class="mt-6 md:mt-0">
-                        <h1 class="text-2xl font-semibold">Why is LifeLine - Blood Donation?</h1>
-
-                        <div class="mt-4">
-                            <li>100% Automated</li>
-                            <li>Always Free</li>
-                            <li>24x7 service</li>
-                            <li>All Data is secured</li>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <a href="#">
-                        <button
-                            class="bg-[#EB2C29] px-7 rounded-md py-3 font-semibold text-white transition duration-500 ease-in-out hover:bg-black shadow-2xl mt-8">Learn
-                            More</button>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- sms formate section -->
-        <section class="xl:w-10/12 mx-auto my-16">
-
-            <h1 class="text-center font-semibold text-3xl">SMS Format</h1>
-
-            <div class="mt-8 md:flex justify-between px-5 md:px-10 lg:px-20 xl:px-0">
-                <div>
-                    <select class="select select-bordered bg-red-600 text-white font-medium w-full">
-                        <option disabled selected>To place a blood request</option>
-                        <option>To place a blood request</option>
-                        <option>To join as a donor</option>
-                        <option>To search blood donors</option>
-                        <option>To update profile</option>
-                        <option>To activate own profile</option>
-                        <option>To deactivate own profile</option>
-                        <option>To blacklist a mobile number</option>
-                        <option>To verify a blood request</option>
-                    </select>
-                </div>
-
-                <div class=" mt-8 md:mt-0">
-                    <div class="card bg-gray-200 shadow-xl">
-                        <div class="card-body">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-8 md:mt-0 text-center">
-                    <div class="stats shadow border-2 border-red-500">
-                        <div class="stat">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- search donors -->
-        <section class="bg-[#FAFAFA] mt-28">
-            <div class="xl:w-10/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto py-16">
-                <h1 class="text-center font-semibold text-2xl">Search Donors</h1>
-
+        <!-- top search -->
+        <section class="bg-[#FCE0DF]">
+            <div class="xl:w-10/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto py-8">
                 <div class="grid grid-cols-1 md:grid-cols-2
-                    lg:grid-cols-3 xl:grid-cols-5 justify-between gap-6 items-center mt-6">
+                lg:grid-cols-3 xl:grid-cols-5 justify-between gap-6 items-center text-black">
                     <div>
                         <label class="font-medium">Blood Group</label><br>
                         <select class="select select-bordered w-full mt-1 font-semibold">
@@ -312,61 +194,235 @@
 
                     <div>
                         <button id="loadingButton"
-                            class="bg-[#EB2C29] px-7 rounded-md py-3 font-semibold text-white transition duration-500 ease-in-out hover:bg-black shadow-2xl mt-7 flex items-center space-x-2">
-                            <span id="spinner" class="hidden  loading loading-spinner loading-md"></span>
-                            <span>Search</span>
+                            class="bg-[#EB2C29] px-6 rounded-md py-3 text-white transition duration-500 ease-in-out hover:bg-black shadow-2xl mt-7 flex items-center space-x-1">
+                            <span id="spinner" class="hidden loading loading-spinner loading-md"></span>
+                            <span>Search Donors</span>
                         </button>
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
-        <!-- network area section -->
-        <section>
-            <div class="xl:w-10/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto text-center space-y-12 py-20">
-                <h1 class="text-center font-semibold text-2xl md:text-3xl">We're a network of</h1>
+        <!-- donor card section -->
+        <section class="xl:w-10/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto mt-10">
+            <div class="text-white border bg-[#EB2C29] w-full py-3 px-4">
+                <p>Total Donors Found {something}</p>
+            </div>
 
-                <div class="md:flex justify-around space-y-10 md:space-y-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-5">
+                <div class="border shadow-xl flex gap-4 p-2 h-32 w-84">
                     <div>
-                        <i class="fa-solid fa-users text-[#EB2C29] text-5xl"></i>
-                        <h1 class="mt-6 text-2xl font-medium">500+ Donors</h1>
+                        <img src="image/user.jpg" alt="user_profile" class="h-full w-full">
                     </div>
-                    <div>
-                        <i class="fa-solid fa-location-dot text-[#EB2C29] text-5xl"></i>
-                        <h1 class="mt-6 text-2xl font-medium">64 Districts</h1>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-droplet text-[#EB2C29] text-5xl"></i>
-                        <h1 class="mt-6 text-2xl font-medium">8 Blood Groups</h1>
+                    <div class="flex justify-between gap-5">
+                        <div class="space-y-4">
+                            <p>Name</p>
+                            <p>Group</p>
+                            <p>District</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p>N/A</p>
+                            <p>N/A</p>
+                            <p>N/A</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- about us section -->
-        <section class="bg-[#FAFAFA]">
-            <div class="xl:w-10/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto text-center py-20 space-y-5">
-                <h1 class="text-3xl font-medium">About Us</h1>
-                <p>LifeLine - Blood Donation is an automated blood service that connects blood searchers <br> with
-                    voluntary blood donors in a moment through SMS. LifeLine - Blood Donation is a <br> not-for-profit
-                    initiative to aware people of voluntary blood donation in Bangladesh</p>
-
-                <div>
-                    <a href="#">
-                        <button
-                            class="bg-[#EB2C29] px-7 rounded-md py-3 text-white transition duration-500 ease-in-out hover:bg-black shadow-2xl mt-4">Learn
-                            More</button>
-                    </a>
+                <div class="border shadow-xl flex gap-4 p-2 h-32 w-84">
+                    <div>
+                        <img src="image/user.jpg" alt="user_profile" class="h-full w-full">
+                    </div>
+                    <div class="flex justify-between gap-5">
+                        <div class="space-y-4">
+                            <p>Name</p>
+                            <p>Group</p>
+                            <p>District</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p>N/A</p>
+                            <p>N/A</p>
+                            <p>N/A</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="border shadow-xl flex gap-4 p-2 h-32 w-84">
+                    <div>
+                        <img src="image/user.jpg" alt="user_profile" class="h-full w-full">
+                    </div>
+                    <div class="flex justify-between gap-5">
+                        <div class="space-y-4">
+                            <p>Name</p>
+                            <p>Group</p>
+                            <p>District</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p>N/A</p>
+                            <p>N/A</p>
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border shadow-xl flex gap-4 p-2 h-32 w-84">
+                    <div>
+                        <img src="image/user.jpg" alt="user_profile" class="h-full w-full">
+                    </div>
+                    <div class="flex justify-between gap-5">
+                        <div class="space-y-4">
+                            <p>Name</p>
+                            <p>Group</p>
+                            <p>District</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p>N/A</p>
+                            <p>N/A</p>
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border shadow-xl flex gap-4 p-2 h-32 w-84">
+                    <div>
+                        <img src="image/user.jpg" alt="user_profile" class="h-full w-full">
+                    </div>
+                    <div class="flex justify-between gap-5">
+                        <div class="space-y-4">
+                            <p>Name</p>
+                            <p>Group</p>
+                            <p>District</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p>N/A</p>
+                            <p>N/A</p>
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border shadow-xl flex gap-4 p-2 h-32 w-84">
+                    <div>
+                        <img src="image/user.jpg" alt="user_profile" class="h-full w-full">
+                    </div>
+                    <div class="flex justify-between gap-5">
+                        <div class="space-y-4">
+                            <p>Name</p>
+                            <p>Group</p>
+                            <p>District</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p>N/A</p>
+                            <p>N/A</p>
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border shadow-xl flex gap-4 p-2 h-32 w-84">
+                    <div>
+                        <img src="image/user.jpg" alt="user_profile" class="h-full w-full">
+                    </div>
+                    <div class="flex justify-between gap-5">
+                        <div class="space-y-4">
+                            <p>Name</p>
+                            <p>Group</p>
+                            <p>District</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p>N/A</p>
+                            <p>N/A</p>
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border shadow-xl flex gap-4 p-2 h-32 w-84">
+                    <div>
+                        <img src="image/user.jpg" alt="user_profile" class="h-full w-full">
+                    </div>
+                    <div class="flex justify-between gap-5">
+                        <div class="space-y-4">
+                            <p>Name</p>
+                            <p>Group</p>
+                            <p>District</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p>N/A</p>
+                            <p>N/A</p>
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border shadow-xl flex gap-4 p-2 h-32 w-84">
+                    <div>
+                        <img src="image/user.jpg" alt="user_profile" class="h-full w-full">
+                    </div>
+                    <div class="flex justify-between gap-5">
+                        <div class="space-y-4">
+                            <p>Name</p>
+                            <p>Group</p>
+                            <p>District</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p>N/A</p>
+                            <p>N/A</p>
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border shadow-xl flex gap-4 p-2 h-32 w-84">
+                    <div>
+                        <img src="image/user.jpg" alt="user_profile" class="h-full w-full">
+                    </div>
+                    <div class="flex justify-between gap-5">
+                        <div class="space-y-4">
+                            <p>Name</p>
+                            <p>Group</p>
+                            <p>District</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p>N/A</p>
+                            <p>N/A</p>
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border shadow-xl flex gap-4 p-2 h-32 w-84">
+                    <div>
+                        <img src="image/user.jpg" alt="user_profile" class="h-full w-full">
+                    </div>
+                    <div class="flex justify-between gap-5">
+                        <div class="space-y-4">
+                            <p>Name</p>
+                            <p>Group</p>
+                            <p>District</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p>N/A</p>
+                            <p>N/A</p>
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border shadow-xl flex gap-4 p-2 h-32 w-84">
+                    <div>
+                        <img src="image/user.jpg" alt="user_profile" class="h-full w-full">
+                    </div>
+                    <div class="flex justify-between gap-5">
+                        <div class="space-y-4">
+                            <p>Name</p>
+                            <p>Group</p>
+                            <p>District</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p>N/A</p>
+                            <p>N/A</p>
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section>
+         </section>
 
         <!-- search donation section -->
-        <section class="bg-[#FCE0DF] border-dashed border-b-2 border-red-600">
-            <div class="xl:w-10/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto py-16">
+        <section class="bg-[#FCE0DF] border-dashed border-b-2 border-red-600 mt-16">
+            <div class="xl:w-10/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto py-6">
                 <div class="grid grid-cols-1 md:grid-cols-2
-                    lg:grid-cols-3 xl:grid-cols-5 justify-between gap-6 items-center">
+                    lg:grid-cols-3 xl:grid-cols-5 justify-between gap-6 items-center text-black">
                     <div>
                         <label class="font-medium">Blood Group</label><br>
                         <select class="select select-bordered w-full mt-1 font-semibold">
@@ -453,7 +509,7 @@
                     </div>
 
                     <div>
-                        <label class="font-medium">Date of Blood Donation</label><br>
+                        <label>Date of Blood Donation</label><br>
                         <input type="date" class="input input-bordered w-full mt-1 font-semibold">
                     </div>
 
@@ -476,6 +532,7 @@
                 </div>
             </div>
         </section>
+
     </main>
     <!-- main section end -->
 
@@ -534,6 +591,7 @@
             </div>
         </section>
     </footer>
+    </main>
 
 
     <script src="js/function.js"></script>
