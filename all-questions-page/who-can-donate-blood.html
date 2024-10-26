@@ -26,50 +26,67 @@
     <!-- header section start -->
     <section class="bg-[#EB2C29] text-white">
         <div class="flex justify-between items-center px-5 md:px-10 lg:px-0 lg:w-10/12 mx-auto pt-3">
-            <div class="flex gap-5">
-                <a href="#"><i class="fa-brands fa-facebook "></i></a>
-                <a href="#"><i class="fa-brands fa-instagram "></i></a>
-                <a href="#"><i class="fa-brands fa-square-twitter "></i></a>
-            </div>
-            <div>SMS to 0123456789</div>
+            <marquee class="text-xs lg:text-base">
+                লাইফ লাইন - ব্লাড ডোনেশন ওয়েবসাইটে আপনাকে স্বাগতম । রক্তদান একটি মহৎ মানবসেবা ।
+            </marquee>
         </div>
     </section>
 
     <header class=" text-white sticky top-0 z-50 backdrop-blur-md">
-        <div class="bg-[#EB2C29]">
+        <div class="bg-[#B71C1C]">
             <nav class="flex justify-between items-center lg:w-10/12 mx-auto pt-4 pb-2 px-5 md:px-10 lg:px-0 ">
                 <div>
                     <a href="../index.html">
-                        <img src="#" alt="site_logo" class="font-medium text-3xl border w-14 h-12 bg-white"></img>
+                        <img src="../image/logo.jpg" alt="site_logo" class="font-medium text-3xl rounded-md w-12 h-10 bg-white"></img>
                     </a>
                 </div>
 
                 <div class="flex items-center gap-6 font-medium text-2xl xl:text-base">
-                    <button class="btn btn-ghost btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+
+                    <label class="swap swap-rotate">
+                        <!-- this hidden checkbox controls the state -->
+                        <input type="checkbox" class="theme-controller" value="synthwave" />
+                      
+                        <!-- sun icon -->
+                        <svg
+                          class="swap-off h-10 w-10 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24">
+                          <path
+                            d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
                         </svg>
-                    </button>
+                      
+                        <!-- moon icon -->
+                        <svg
+                          class="swap-on h-10 w-10 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24">
+                          <path
+                            d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                        </svg>
+                      </label>
+
+                    <div class="form-control">
+                        <input type="text" placeholder="Search..."
+                            class="text-black text-[14px] px-4 py-1 md:px-6 w-40 rounded-md md:w-auto" />
+                    </div>
 
                     <div class="hidden xl:block">
                         <ul class="flex justify-between gap-12">
                             <li class="transform transition duration-300 hover:scale-110"><a href="../index.html">Home</a>
                             </li>
-                            <li class="transform transition duration-300 hover:scale-110"><a href="../menu-bar-option-page/about-us.html">About
+                            <li class="transform transition duration-300 hover:scale-110"><a
+                                    href="../menu-bar-option-page/about-us.html">About
                                     Us</a>
                             </li>
                             <li class="transform transition duration-300 hover:scale-110"><a
-                                    href="../menu-bar-option-page/search-donors.html">Search
-                                    Donors</a>
+                                    href="../menu-bar-option-page/search-donors.html">Donors List</a>
                             </li>
-                            <li class="transform transition duration-300 hover:scale-110"><a href="#">Add Blood
-                                    Request</a></li>
                             <li class="transform transition duration-300 hover:scale-110"><a
                                     href="../menu-bar-option-page/register.html">Register</a>
                             </li>
-                            <li class="transform transition duration-300 hover:scale-110"><a href="../menu-bar-option-page/login.html">Login</a>
+                            <li class="transform transition duration-300 hover:scale-110"><a
+                                    href="../menu-bar-option-page/login.html">Login</a>
                             </li>
                         </ul>
                     </div>
@@ -79,8 +96,7 @@
                         <ul tabindex="0" class="dropdown-content bg-red-600 menu rounded-box z-[1] w-52 p-2 shadow">
                             <li><a href="../index.html">Home</a></li>
                             <li><a href="../menu-bar-option-page/about-us.html">About Us</a></li>
-                            <li><a href="../menu-bar-option-page/search-donors.html">Search Donors</a></li>
-                            <li><a href="#">Add Blood Request</a></li>
+                            <li><a href="../menu-bar-option-page/search-donors.html">Donors List</a></li>
                             <li><a href="../menu-bar-option-page/register.html">Register</a></li>
                             <li><a href="../menu-bar-option-page/login.html">Login</a></li>
                         </ul>
@@ -90,15 +106,16 @@
 
         </div>
     </header>
+    <!-- header section end -->
 
 
     <!-- main section start -->
     <main>
 
         <section class="px-5 md:px-10 lg:px-0 lg:w-10/12 mx-auto mt-4">
-            <h1 class="text-3xl font-semibold">Who can donate blood?</h1>
-            <p class="mt-8 font-medium">Most people can give blood. You can give blood if you:</p>
-            <div class="mt-5 font-medium ml-6">
+            <h1 class="text-xl lg:text-3xl font-semibold">Who can donate blood?</h1>
+            <p class="mt-8 font-medium text-xs lg:text-base">Most people can give blood. You can give blood if you:</p>
+            <div class="mt-5 font-medium ml-6 text-xs lg:text-base">
                 <li>are fit and healthy</li>
                 <li>weigh between 7 stone 12 lbs and 25 stone, or 50kg and 160kg</li>
                 <li>are aged between 17 and 66 (or 70 if you have given blood before)</li>
@@ -106,133 +123,131 @@
             </div>
         </section>
 
-        <!-- search donation section -->
-        <section class="bg-[#FCE0DF] border-dashed border-b-2 border-red-600 mt-8">
-            <div class="xl:w-10/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto py-10">
-                <div class="grid grid-cols-1 md:grid-cols-2
-                    lg:grid-cols-3 xl:grid-cols-5 justify-between gap-6 items-center">
-                    <div>
-                        <label class="font-medium">Blood Group</label><br>
-                        <select class="select select-bordered w-full mt-1 font-semibold">
-                            <option disabled selected>Select</option>
-                            <option>A+</option>
-                            <option>A-</option>
-                            <option>B+</option>
-                            <option>B-</option>
-                            <option>O+</option>
-                            <option>O-</option>
-                            <option>AB+</option>
-                            <option>Ab-</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="font-medium">District</label><br>
-                        <select class="select select-bordered w-full mt-1 font-semibold">
-                            <option disabled selected>Select</option>
-                            <option>Dhaka</option>
-                            <option>Faridpur</option>
-                            <option>Gazipur</option>
-                            <option>Gopalganj</option>
-                            <option>Jamalpur</option>
-                            <option>Kishoreganj</option>
-                            <option>Madaripur</option>
-                            <option>Manikganj</option>
-                            <option>Munshiganj</option>
-                            <option>Mymensingh</option>
-                            <option>Narayanganj</option>
-                            <option>Narsingdi</option>
-                            <option>Netrokona</option>
-                            <option>Rajbari</option>
-                            <option>Shariatpur</option>
-                            <option>Sherpur</option>
-                            <option>Tangail</option>
-                            <option>Bogra</option>
-                            <option>Joypurhat</option>
-                            <option>Naogaon</option>
-                            <option>Natore</option>
-                            <option>Nawabganj</option>
-                            <option>Pabna</option>
-                            <option>Rajshahi</option>
-                            <option>Sirajgonj</option>
-                            <option>Dinajpur</option>
-                            <option>Gaibandha</option>
-                            <option>Kurigram</option>
-                            <option>Lalmonirhat</option>
-                            <option>Nilphamari</option>
-                            <option>Panchagarh</option>
-                            <option>Rangpur</option>
-                            <option>Thakurgaon</option>
-                            <option>Barguna </option>
-                            <option>Barisal</option>
-                            <option>Bhola</option>
-                            <option>Jhalokati</option>
-                            <option>Patuakhali</option>
-                            <option>Pirojpur</option>
-                            <option>Bandarban</option>
-                            <option>Brahmanbaria</option>
-                            <option>Chandpur</option>
-                            <option>Chattragram</option>
-                            <option>Comilla</option>
-                            <option>Cox's Bazar</option>
-                            <option>Feni</option>
-                            <option>Khagrachari</option>
-                            <option>Lakshmipur</option>
-                            <option>Noakhali</option>
-                            <option>Rangamati</option>
-                            <option>Habiganj</option>
-                            <option>Maulvibazar</option>
-                            <option>Sunamganj</option>
-                            <option>Sylhet</option>
-                            <option>Bagerhat</option>
-                            <option>Chuadanga</option>
-                            <option>Jessore</option>
-                            <option>Jhenaidah</option>
-                            <option>Khulna</option>
-                            <option>Kushtia</option>
-                            <option>Magura</option>
-                            <option>Meherpur</option>
-                            <option>Narail</option>
-                            <option>Satkhira </option>
-                        </select>
-                    </div>
+       <!-- search donation section -->
+       <section class="bg-[#FCE0DF] border-dashed border-b-2 border-red-600">
+        <div class="xl:w-10/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto mt-8 py-8 lg:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2
+                lg:grid-cols-3 xl:grid-cols-5 justify-between gap-6 items-center text-xs lg:text-base">
+                <div>
+                    <label class="font-medium">Blood Group</label><br>
+                    <select class="select select-bordered w-full mt-1 font-semibold text-xs lg:text-base">
+                        <option disabled selected>Select</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>AB+</option>
+                        <option>Ab-</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="font-medium">District</label><br>
+                    <select class="select select-bordered w-full mt-1 font-semibold text-xs lg:text-base">
+                        <option disabled selected>Select</option>
+                        <option>Dhaka</option>
+                        <option>Faridpur</option>
+                        <option>Gazipur</option>
+                        <option>Gopalganj</option>
+                        <option>Jamalpur</option>
+                        <option>Kishoreganj</option>
+                        <option>Madaripur</option>
+                        <option>Manikganj</option>
+                        <option>Munshiganj</option>
+                        <option>Mymensingh</option>
+                        <option>Narayanganj</option>
+                        <option>Narsingdi</option>
+                        <option>Netrokona</option>
+                        <option>Rajbari</option>
+                        <option>Shariatpur</option>
+                        <option>Sherpur</option>
+                        <option>Tangail</option>
+                        <option>Bogra</option>
+                        <option>Joypurhat</option>
+                        <option>Naogaon</option>
+                        <option>Natore</option>
+                        <option>Nawabganj</option>
+                        <option>Pabna</option>
+                        <option>Rajshahi</option>
+                        <option>Sirajgonj</option>
+                        <option>Dinajpur</option>
+                        <option>Gaibandha</option>
+                        <option>Kurigram</option>
+                        <option>Lalmonirhat</option>
+                        <option>Nilphamari</option>
+                        <option>Panchagarh</option>
+                        <option>Rangpur</option>
+                        <option>Thakurgaon</option>
+                        <option>Barguna </option>
+                        <option>Barisal</option>
+                        <option>Bhola</option>
+                        <option>Jhalokati</option>
+                        <option>Patuakhali</option>
+                        <option>Pirojpur</option>
+                        <option>Bandarban</option>
+                        <option>Brahmanbaria</option>
+                        <option>Chandpur</option>
+                        <option>Chattragram</option>
+                        <option>Comilla</option>
+                        <option>Cox's Bazar</option>
+                        <option>Feni</option>
+                        <option>Khagrachari</option>
+                        <option>Lakshmipur</option>
+                        <option>Noakhali</option>
+                        <option>Rangamati</option>
+                        <option>Habiganj</option>
+                        <option>Maulvibazar</option>
+                        <option>Sunamganj</option>
+                        <option>Sylhet</option>
+                        <option>Bagerhat</option>
+                        <option>Chuadanga</option>
+                        <option>Jessore</option>
+                        <option>Jhenaidah</option>
+                        <option>Khulna</option>
+                        <option>Kushtia</option>
+                        <option>Magura</option>
+                        <option>Meherpur</option>
+                        <option>Narail</option>
+                        <option>Satkhira </option>
+                    </select>
+                </div>
 
-                    <div>
-                        <label class="font-medium">Date of Blood Donation</label><br>
-                        <input type="date" class="input input-bordered w-full mt-1 font-semibold">
-                    </div>
+                <div>
+                    <label class="font-medium">Date of Blood Donation</label><br>
+                    <input type="date" class="input input-bordered w-full mt-1 font-semibold text-xs lg:text-base">
+                </div>
 
-                    <div>
-                        <label class="font-medium">Donor Type</label><br>
-                        <select class="select select-bordered w-full mt-1 font-semibold">
-                            <option disabled selected>Select</option>
-                            <option>All</option>
-                            <option>Eligible</option>
-                        </select>
-                    </div>
+                <div>
+                    <label class="font-medium">Donor Type</label><br>
+                    <select class="select select-bordered w-full mt-1 font-semibold text-xs lg:text-base">
+                        <option disabled selected>Select</option>
+                        <option>All</option>
+                        <option>Eligible</option>
+                    </select>
+                </div>
 
-                    <div>
-                        <a href="../menu-bar-option-page/search-donors.html">
-                            <button id="loadingButton"
-                                class="bg-[#EB2C29] px-6 rounded-md py-3 text-white transition duration-500 ease-in-out hover:bg-black shadow-2xl mt-7 flex items-center space-x-2">
-                                <span id="spinner" class="hidden  loading loading-spinner loading-md"></span>
-                                <span>Search Donors</span>
-                            </button>
-                        </a>
-                    </div>
+                <div class="text-center">
+                    <a href="#">
+                        <button
+                            class="bg-[#EB2C29] rounded-md py-3 font-semibold text-white transition duration-500 ease-in-out hover:bg-black shadow-2xl mt-7 w-full">Search
+                        </button>
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     </main>
     <!-- main section end -->
 
-    <footer class="bg-[#EB2C29] border-dashed border-t-2 border-[#FCE0DF] mt-1">
+    <footer class="bg-[#B71C1C] border-dashed border-t-2 border-[#FCE0DF] mt-1">
         <section
-            class="xl:w-10/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto md:flex justify-between py-16 space-y-12 md:space-y-0 gap-5">
-            <div class="space-y-5">
-                <h1 class="text-white text-3xl font-medium">LifeLine - Blood Donation</h1>
+            class="xl:w-10/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto md:flex justify-between py-16 space-y-6 md:space-y-0 gap-5">
+            <div class="space-y-5 md:w-1/3">
+                <h1 class="text-white text-xl md:text-2xl lg:text-3xl font-medium">LifeLine - Blood Donation</h1>
 
-                <p class="text-white">LifeLine - Blood Donation is an automated <br> blood service that connects
-                    blood searchers <br> with voluntary blood donors in a moment <br> through SMS and website.</p>
+                <p class="text-white text-xs lg:text-base">LifeLine - Blood Donation is a web based blood service that connects blood
+                    searchers with voluntary blood donors in a moment through Gmail and website.</p>
 
                 <div class="flex gap-5">
                     <a href="#"><i class="fa-brands fa-facebook "></i></a>
@@ -240,33 +255,33 @@
                     <a href="#"><i class="fa-brands fa-square-twitter "></i></a>
                 </div>
 
-                <p>Term & Conditions <span class="text-white">|</span> Privacy Policy</p>
+                <p class="text-xs lg:text-base">Term & Conditions <span class="text-white">|</span> Privacy Policy</p>
             </div>
 
-            <div class="text-white space-y-5">
-                <h1 class="text-3xl font-medium">Important Link</h1>
+            <div class="text-white space-y-5 text-xs lg:text-base">
+                <h1 class="text-xl md:text-2xl lg:text-3xl font-medium">Important Link</h1>
 
                 <ul class="space-y-5">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">Add Blood Request</a></li>
-                    <li><a href="../menu-bar-option-page/search-donors.html">Search Blood Donors in Bangladesh</a></li>
-                    <li><a href="../menu-bar-option-page/faq.html">Frequently Asked Questions (FAQs)</a></li>
-                    <li><a href="../menu-bar-option-page/about-us.html">About Us</a></li>
-                    <li><a href="../menu-bar-option-page/contact-us.html">Contact Us</a></li>
+                    <li><a href="../index.html" class="hover:underline">Home</a></li>
+                    <li><a href="../menu-bar-option-page/search-donors.html" class="hover:underline">Blood Donors List in Bangladesh</a></li>
+                    <li><a href="../menu-bar-option-page/faq.html" class="hover:underline">Frequently Asked Questions (FAQs)</a></li>
+                    <li><a href="../menu-bar-option-page/about-us.html" class="hover:underline">About Us</a></li>
+                    <li><a href="../menu-bar-option-page/contact-us.html" class="hover:underline">Contact Us</a></li>
                 </ul>
             </div>
 
 
-            <div class="text-white space-y-5">
-                <h1 class="text-3xl font-medium">About Blood</h1>
+            <div class="text-white space-y-5 text-xs lg:text-base">
+                <h1 class="text-xl md:text-2xl lg:text-3xl font-medium">About Blood</h1>
 
                 <ul class="space-y-5">
-                    <li><a href="what-is-blood.html">What is blood?</a></li>
-                    <li><a href="what-is-blood-donation.html">What is blood donation?</a></li>
-                    <li><a href="who-can-donate-blood.html">Who can donate blood?</a></li>
-                    <li><a href="How-often-can-i-donate-blood.html">How often can I donate blood?</a></li>
-                    <li><a href="Different-blood-term.html">Different Blood Terms</a></li>
-                    <li><a href="Different-blood-groups.html">Different Blood Groups</a></li>
+                    <li><a href="what-is-blood.html" class="hover:underline">What is blood?</a></li>
+                    <li><a href="what-is-blood-donation.html" class="hover:underline">What is blood donation?</a></li>
+                    <li><a href="who-can-donate-blood.html" class="hover:underline">Who can donate blood?</a></li>
+                    <li><a href="How-often-can-i-donate-blood.html" class="hover:underline">How often can I donate
+                            blood?</a></li>
+                    <li><a href="Different-blood-term.html" class="hover:underline">Different Blood Terms</a></li>
+                    <li><a href="Different-blood-groups.html" class="hover:underline">Different Blood Groups</a></li>
                 </ul>
             </div>
         </section>
@@ -281,8 +296,6 @@
             </div>
         </section>
     </footer>
-
-    <script src="../js/function.js"></script>
 </body>
 
 </html>
