@@ -40,8 +40,8 @@
     <!-- header section start -->
     <section class="bg-[#EB2C29] text-white">
         <div
-            class="flex justify-between items-center text-sm lg:text-base px-5 md:px-10 lg:px-0 lg:w-10/12 mx-auto pt-3">
-            <marquee class="pb-2">
+            class="flex justify-between items-center text-sm lg:text-base px-5 md:px-10 lg:px-0 lg:w-10/12 mx-auto py-1">
+            <marquee>
                 লাইফ লাইন - ব্লাড ডোনেশন ওয়েবসাইটে আপনাকে স্বাগতম । রক্তদান একটি মহৎ মানবসেবা ।
             </marquee>
         </div>
@@ -57,7 +57,7 @@
                     </a>
                 </div>
 
-                <div class="flex items-center gap-4 font-medium text-2xl xl:text-base">
+                <div class="flex items-center gap-6 font-medium text-2xl xl:text-base">
                     <div class="form-control">
                         <input type="text" placeholder="Search..."
                             class="text-black text-sm py-2 px-4 md:px-6 w-40 rounded-md md:w-auto" />
@@ -80,6 +80,45 @@
                             <li class="transform transition duration-300 hover:scale-110"><a
                                     href="./menu-bar-option-page/login.html">Login</a>
                             </li>
+                            <li onclick="toggleLoginModal()" class="transform transition duration-300 hover:scale-110">
+                                Admin</a>
+                            </li>
+
+                            <!-- Admin Panel Login -->
+                            <div id="loginModal"
+                                class="fixed inset-0 mt-64 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+                                <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
+                                    <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Admin Login</h3>
+
+                                    <!-- Username Input -->
+                                    <div class="mb-4">
+                                        <label class="block text-gray-700">Username</label>
+                                        <input type="text" id="username"
+                                            class="text-black w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                                            placeholder="Enter username">
+                                    </div>
+
+                                    <!-- Password Input -->
+                                    <div class="mb-4">
+                                        <label class="block text-gray-700">Password</label>
+                                        <input type="password" id="password"
+                                            class="text-black w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                                            placeholder="Enter password">
+                                    </div>
+
+                                    <!-- Error Message -->
+                                    <p id="errorMsg" class="text-red-500 text-center hidden">Invalid username or
+                                        password.</p>
+
+                                    <!-- Login Button -->
+                                    <div class="flex justify-end mt-4">
+                                        <button onclick="login()"
+                                            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Login</button>
+                                        <button onclick="toggleLoginModal()"
+                                            class="ml-2 bg-gray-500 text-white font-bold py-2 px-4 rounded-lg">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
                         </ul>
                     </div>
 
@@ -91,6 +130,43 @@
                             <li><a href="menu-bar-option-page/search-donors.html">Donors List</a></li>
                             <li><a href="menu-bar-option-page/register.html">Register</a></li>
                             <li><a href="menu-bar-option-page/login.html">Login</a></li>
+                            <li class="ml-3 mt-2" onclick="toggleLoginModal()">Admin</li>
+
+                            <!-- Admin Panel Login -->
+                            <div id="loginModal2"
+                                class="fixed inset-0 mt-64 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+                                <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
+                                    <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Admin Login</h3>
+
+                                    <!-- Username Input -->
+                                    <div class="mb-4">
+                                        <label class="block text-gray-700">Username</label>
+                                        <input type="text" id="username2"
+                                            class="text-black w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                                            placeholder="Enter username">
+                                    </div>
+
+                                    <!-- Password Input -->
+                                    <div class="mb-4">
+                                        <label class="block text-gray-700">Password</label>
+                                        <input type="password" id="password2"
+                                            class="text-black w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                                            placeholder="Enter password">
+                                    </div>
+
+                                    <!-- Error Message -->
+                                    <p id="errorMsg2" class="text-red-500 text-center hidden">Invalid username or
+                                        password.</p>
+
+                                    <!-- Login Button -->
+                                    <div class="flex justify-end mt-4">
+                                        <button onclick="login()"
+                                            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Login</button>
+                                        <button onclick="toggleLoginModal()"
+                                            class="ml-2 bg-gray-500 text-white font-bold py-2 px-4 rounded-lg">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -511,6 +587,9 @@
             </div>
         </section>
     </footer>
+
+
+    <script src="JS/function.js"></script>
 </body>
 
 </html>

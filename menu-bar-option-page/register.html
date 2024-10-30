@@ -41,7 +41,7 @@
                     </a>
                 </div>
 
-                <div class="flex items-center gap-4 font-medium text-2xl xl:text-base">
+                <div class="flex items-center gap-6 font-medium text-2xl xl:text-base">
                     <div class="form-control">
                         <input type="text" placeholder="Search..."
                             class="text-black text-sm px-4 py-2 md:px-6 w-40 rounded-md md:w-auto" />
@@ -65,6 +65,9 @@
                             <li class="transform transition duration-300 hover:scale-110"><a
                                     href="./login.html">Login</a>
                             </li>
+                            <li class="hidden transform transition duration-300 hover:scale-110"><a
+                                    href="../Admin Panel/dashboard-main.html" target="_blank">Admin</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -76,6 +79,7 @@
                             <li><a href="./search-donors.html">Donors List</a></li>
                             <li><a href="./register.html">Register</a></li>
                             <li><a href="./login.html">Login</a></li>
+                            <li class="hidden"><a href="../Admin Panel/dashboard-main.html" target="_blank">Admin</a></li>
                         </ul>
                     </div>
                 </div>
@@ -100,24 +104,116 @@
         <section class="xl:mt-16 mt-8">
             <div class="xl:w-10/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto lg:flex items-center lg:my-24">
                 <div class="bg-gray-200  lg:w-1/2 mx-auto mt-10 lg:mt-0 border px-8 py-12 rounded-md text-center">
-                    <div class="divider font-medium text-2xl md:text-3xl">Registration</div>
+                    <div class="divider font-medium text-xl md:text-3xl">Create Your Profile</div>
                     <p class="text-sm lg:text-base mt-8 opacity-80">Create your account. It's free and only takes a minute.</p>
 
                     <form class="mt-8 space-y-5">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm md:text-base">
-                            <input type="text" placeholder="First Name" class="px-4 py-2 border w-full rounded-md outline-none">
-                            <input type="text" placeholder="Last Name" class="px-4 py-2 border w-full rounded-md outline-none">
+                            <input type="text" placeholder="First Name" class="px-4 py-3 border w-full rounded-md outline-none">
+                            <input type="text" placeholder="Last Name" class="px-4 py-3 border w-full rounded-md outline-none">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm md:text-base">
+                            <select class="select w-full rounded-md outline-none">
+                                <option disabled selected>Blood Group</option>
+                                <option>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                                <option>AB+</option>
+                                <option>Ab-</option>
+                            </select>
+                            <select class="select w-full rounded-md outline-none">
+                                <option disabled selected>Location</option>
+                                <option>Dhaka</option>
+                                <option>Faridpur</option>
+                                <option>Gazipur</option>
+                                <option>Gopalganj</option>
+                                <option>Jamalpur</option>
+                                <option>Kishoreganj</option>
+                                <option>Madaripur</option>
+                                <option>Manikganj</option>
+                                <option>Munshiganj</option>
+                                <option>Mymensingh</option>
+                                <option>Narayanganj</option>
+                                <option>Narsingdi</option>
+                                <option>Netrokona</option>
+                                <option>Rajbari</option>
+                                <option>Shariatpur</option>
+                                <option>Sherpur</option>
+                                <option>Tangail</option>
+                                <option>Bogra</option>
+                                <option>Joypurhat</option>
+                                <option>Naogaon</option>
+                                <option>Natore</option>
+                                <option>Nawabganj</option>
+                                <option>Pabna</option>
+                                <option>Rajshahi</option>
+                                <option>Sirajgonj</option>
+                                <option>Dinajpur</option>
+                                <option>Gaibandha</option>
+                                <option>Kurigram</option>
+                                <option>Lalmonirhat</option>
+                                <option>Nilphamari</option>
+                                <option>Panchagarh</option>
+                                <option>Rangpur</option>
+                                <option>Thakurgaon</option>
+                                <option>Barguna </option>
+                                <option>Barisal</option>
+                                <option>Bhola</option>
+                                <option>Jhalokati</option>
+                                <option>Patuakhali</option>
+                                <option>Pirojpur</option>
+                                <option>Bandarban</option>
+                                <option>Brahmanbaria</option>
+                                <option>Chandpur</option>
+                                <option>Chattragram</option>
+                                <option>Comilla</option>
+                                <option>Cox's Bazar</option>
+                                <option>Feni</option>
+                                <option>Khagrachari</option>
+                                <option>Lakshmipur</option>
+                                <option>Noakhali</option>
+                                <option>Rangamati</option>
+                                <option>Habiganj</option>
+                                <option>Maulvibazar</option>
+                                <option>Sunamganj</option>
+                                <option>Sylhet</option>
+                                <option>Bagerhat</option>
+                                <option>Chuadanga</option>
+                                <option>Jessore</option>
+                                <option>Jhenaidah</option>
+                                <option>Khulna</option>
+                                <option>Kushtia</option>
+                                <option>Magura</option>
+                                <option>Meherpur</option>
+                                <option>Narail</option>
+                                <option>Satkhira </option>
+                            </select>
                         </div>
                         <div class="text-sm md:text-base">
-                            <input type="email" placeholder="Email" class="px-4 py-2 border w-full rounded-md outline-none">
+                            <select class="select w-full rounded-md outline-none">
+                                <option disabled selected>Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Transgender</option>
+                                <option>Not to prefer</option>
+                            </select>
                         </div>
                         <div class="text-sm md:text-base">
-                            <input type="tel" placeholder="Phone" class="px-4 py-2 border w-full rounded-md outline-none">
+                            <input type="email" placeholder="Email" class="px-4 py-3 border w-full rounded-md outline-none">
                         </div>
                         <div class="text-sm md:text-base">
-                            <input type="password" placeholder="Password" class="px-4 py-2 border w-full rounded-md outline-none">
+                            <input type="tel" placeholder="Phone" class="px-4 py-3 border w-full rounded-md outline-none">
                         </div>
-                        <div class="flex items-center justify-center gap-2 opacity-80 text-sm md:text-base">
+                        <div class="text-sm md:text-base">
+                            <input type="password" placeholder="Password" class="px-4 py-3 border w-full rounded-md outline-none">
+                        </div>
+                        <div>
+                            <input type="file" class="file-input file-input-bordered w-full " />
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start gap-2 opacity-80 text-sm md:text-base">
                             <input type="checkbox" class="checkbox checkbox-success" />
                             <p>I accept the <span class="text-green-500">Terms of Use</span> & <span class="text-green-500">Privacy Policy</span></p>
                         </div>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Donor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="image/logo.jpg">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header small device section start -->
+    <section class="bg-[#EB2C29] text-white">
+        <div class="flex justify-between items-center px-5 md:px-10 lg:px-0 mx-auto py-1">
+            <marquee class="text-sm lg:text-base">
+                লাইফ লাইন - ব্লাড ডোনেশন ওয়েবসাইটের এডমিন ড্যাশবোর্ডে
+                আপনাকে স্বাগতম । রক্তদান একটি মহৎ মানবসেবা ।
+            </marquee>
+        </div>
+    </section>
+
+    <header class="lg:hidden text-white sticky top-0 z-50 backdrop-blur-md">
+        <div class="bg-[#B71C1C] pb-2">
+            <nav class="flex justify-between items-center lg:w-10/12 mx-auto py-2 px-5 md:px-10 lg:px-0 ">
+                <div class="mr-2">
+                    <a href="../index.html" target="_blank">
+                        <img src="image/logo.jpg" alt="site_logo"
+                            class="font-medium text-3xl rounded-md w-12 h-10 bg-white">
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-2 font-medium text-2xl xl:text-base">
+                    <div class="form-control">
+                        <input type="text" placeholder="Search..."
+                            class="text-black text-sm px-4 py-2 md:px-6 w-40 rounded-md md:w-auto" />
+                    </div>
+
+                    <div class="flex items-center gap-6">
+                        <a href="#">
+                            <img src="image/user.jpg" alt="admin_profile_pic" class="w-8 rounded-full">
+                        </a>
+                    </div>
+
+                    <div class="dropdown dropdown-end xl:hidden">
+                        <div tabindex="0" role="button"><i class="fa-solid fa-bars"></i></div>
+                        <ul tabindex="0" class="dropdown-content bg-red-600 menu rounded-box z-[1] w-52 p-2 shadow">
+                            <li><a href="dashboard-main.html">Dashboard</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="donors-list.html">Donors List</a></li>
+                            <li><a href="add-new-donors.html">Add new donor</a></li>
+                            <li><a href="approvals.html">Approvals</a></li>
+                            <li><a href="donation-list-date.html">Donation lists</a></li>
+                            <li><a href="user-list.html">User List</a></li>
+                            <hr>
+                            <li><a href="#">Logout<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <!-- header small device section end -->
+
+
+    <!-- header large device section start -->
+    <div>
+        <section class="lg:flex">
+            <div class="hidden lg:block justify-between">
+                <aside class="sticky top-0 left-0 w-64 h-screen bg-blue-900 text-white flex flex-col">
+                    <div class="p-4 text-2xl font-bold text-center border-b border-blue-700">
+                        Admin Panel
+                    </div>
+                    <nav class="flex-1 p-4 space-y-2 text-[14px]">
+                        <a href="dashboard-main.html" class="block py-2 px-4 rounded hover:bg-blue-700">Dashboard</a>
+                        <hr class="opacity-30">
+                        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-700">Profile</a>
+                        <hr class="opacity-30">
+                        <a href="donors-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donors list (table
+                            of donors)</a>
+                        <hr class="opacity-30">
+                        <a href="add-new-donors.html" class="block py-2 px-4 rounded hover:bg-blue-700">Add new donor
+                            (Donor add form)</a>
+                        <hr class="opacity-30">
+                        <a href="approvals.html" class="block py-2 px-4 rounded hover:bg-blue-700">Approvals (Table of
+                            pending
+                            donors)</a>
+                        <hr class="opacity-30">
+                        <a href="donation-list-date.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donation
+                            lists (table of donor
+                            donate dates)</a>
+                        <hr class="opacity-30">
+                        <a href="user-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">User List (table of
+                            account
+                            users)</a>
+                        <hr class="opacity-30">
+                    </nav>
+                    <div class="p-4 border-t border-blue-700 text-[14px]">
+                        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-700 text-center">Logout<i
+                                class="fa-solid fa-arrow-right-from-bracket ml-3"></i></a>
+                    </div>
+                </aside>
+            </div>
+
+            <header class="p-4 flex-1">
+                <div class="hidden lg:block sticky top-0 z-50 backdrop-blur-md">
+                    <div class="sticky flex justify-between">
+                        <div class="flex gap-6">
+                            <a href="../index.html" target="_blank">
+                                <img src="image/logo.jpg" alt="llbd_logo" class="w-12 h-10 rounded-md">
+                            </a>
+                            <div class="relative">
+                                <input type="text"
+                                    class="border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                                    placeholder="Search...">
+                                <span class="absolute left-3 top-2.5 text-gray-400">
+                                    🔍
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <h1 class="font-medium">Admin</h1>
+                            <a href="#">
+                                <img src="image/user.jpg" alt="admin_profile_pic" class="w-8 rounded-full">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <section class="h-svh mt-6">
+                    <h1 class="md:flex items-center gap-4 px-4 pt-4 lg:text-2xl font-semibold">Welcome To The Dashboard
+                        <span>
+                            <img src="image/flower.gif" alt="flower_logo" class="w-10 rounded-full">
+                        </span>
+                    </h1>
+                    <!-- main section start -->
+                    <section class="py-8">
+                        <div class="xl:w-11/12 px-5 md:px-10 lg:px-20 xl:px-0 mx-auto lg:flex items-center ">
+                            <div class="bg-gray-200  lg:w-1/2 mx-auto lg:mt-0 border px-8 py-12 rounded-md text-center">
+                                <div class="divider font-medium text-xl md:text-2xl">Add New Donor</div>
+                                <form class="mt-8 space-y-5">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm md:text-base">
+                                        <input type="text" placeholder="First Name"
+                                            class="px-4 py-3 border w-full rounded-md outline-none">
+                                        <input type="text" placeholder="Last Name"
+                                            class="px-4 py-3 border w-full rounded-md outline-none">
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm md:text-base">
+                                        <select class="select w-full rounded-md outline-none">
+                                            <option disabled selected>Blood Group</option>
+                                            <option>A+</option>
+                                            <option>A-</option>
+                                            <option>B+</option>
+                                            <option>B-</option>
+                                            <option>O+</option>
+                                            <option>O-</option>
+                                            <option>AB+</option>
+                                            <option>Ab-</option>
+                                        </select>
+                                        <select class="select w-full rounded-md outline-none">
+                                            <option disabled selected>Location</option>
+                                            <option>Dhaka</option>
+                                            <option>Faridpur</option>
+                                            <option>Gazipur</option>
+                                            <option>Gopalganj</option>
+                                            <option>Jamalpur</option>
+                                            <option>Kishoreganj</option>
+                                            <option>Madaripur</option>
+                                            <option>Manikganj</option>
+                                            <option>Munshiganj</option>
+                                            <option>Mymensingh</option>
+                                            <option>Narayanganj</option>
+                                            <option>Narsingdi</option>
+                                            <option>Netrokona</option>
+                                            <option>Rajbari</option>
+                                            <option>Shariatpur</option>
+                                            <option>Sherpur</option>
+                                            <option>Tangail</option>
+                                            <option>Bogra</option>
+                                            <option>Joypurhat</option>
+                                            <option>Naogaon</option>
+                                            <option>Natore</option>
+                                            <option>Nawabganj</option>
+                                            <option>Pabna</option>
+                                            <option>Rajshahi</option>
+                                            <option>Sirajgonj</option>
+                                            <option>Dinajpur</option>
+                                            <option>Gaibandha</option>
+                                            <option>Kurigram</option>
+                                            <option>Lalmonirhat</option>
+                                            <option>Nilphamari</option>
+                                            <option>Panchagarh</option>
+                                            <option>Rangpur</option>
+                                            <option>Thakurgaon</option>
+                                            <option>Barguna </option>
+                                            <option>Barisal</option>
+                                            <option>Bhola</option>
+                                            <option>Jhalokati</option>
+                                            <option>Patuakhali</option>
+                                            <option>Pirojpur</option>
+                                            <option>Bandarban</option>
+                                            <option>Brahmanbaria</option>
+                                            <option>Chandpur</option>
+                                            <option>Chattragram</option>
+                                            <option>Comilla</option>
+                                            <option>Cox's Bazar</option>
+                                            <option>Feni</option>
+                                            <option>Khagrachari</option>
+                                            <option>Lakshmipur</option>
+                                            <option>Noakhali</option>
+                                            <option>Rangamati</option>
+                                            <option>Habiganj</option>
+                                            <option>Maulvibazar</option>
+                                            <option>Sunamganj</option>
+                                            <option>Sylhet</option>
+                                            <option>Bagerhat</option>
+                                            <option>Chuadanga</option>
+                                            <option>Jessore</option>
+                                            <option>Jhenaidah</option>
+                                            <option>Khulna</option>
+                                            <option>Kushtia</option>
+                                            <option>Magura</option>
+                                            <option>Meherpur</option>
+                                            <option>Narail</option>
+                                            <option>Satkhira </option>
+                                        </select>
+                                    </div>
+                                    <div class="text-sm md:text-base">
+                                        <select class="select w-full rounded-md outline-none">
+                                            <option disabled selected>Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Transgender</option>
+                                            <option>Not to prefer</option>
+                                        </select>
+                                    </div>
+                                    <div class="text-sm md:text-base">
+                                        <input type="email" placeholder="Email"
+                                            class="px-4 py-3 border w-full rounded-md outline-none">
+                                    </div>
+                                    <div class="text-sm md:text-base">
+                                        <input type="tel" placeholder="Phone"
+                                            class="px-4 py-3 border w-full rounded-md outline-none">
+                                    </div>
+                                    <div class="text-sm md:text-base">
+                                        <input type="password" placeholder="Password"
+                                            class="px-4 py-3 border w-full rounded-md outline-none">
+                                    </div>
+                                    <div>
+                                        <input type="file" class="file-input file-input-bordered w-full " />
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit"
+                                            class="bg-[#EB2C29] rounded-md py-2 font-medium text-white transition duration-500 ease-in-out hover:bg-black shadow-2xl w-full">Add
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- main section end -->
+                </section>
+            </header>
+        </section>
+    </div>
+    <!-- header large device section end -->
+</body>
+
+</html>

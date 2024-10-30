@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="image/logo.jpg">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header small device section start -->
+    <section class="bg-[#EB2C29] text-white">
+        <div class="flex justify-between items-center px-5 md:px-10 lg:px-0 mx-auto py-1">
+            <marquee class="text-sm lg:text-base">
+                লাইফ লাইন - ব্লাড ডোনেশন ওয়েবসাইটের এডমিন ড্যাশবোর্ডে
+                আপনাকে স্বাগতম । রক্তদান একটি মহৎ মানবসেবা ।
+            </marquee>
+        </div>
+    </section>
+
+    <header class="lg:hidden text-white sticky top-0 z-50 backdrop-blur-md">
+        <div class="bg-[#B71C1C] pb-2">
+            <nav class="flex justify-between items-center lg:w-10/12 mx-auto pt-4 pb-2 px-5 md:px-10 lg:px-0 ">
+                <div class="mr-2">
+                    <a href="../index.html" target="_blank">
+                        <img src="image/logo.jpg" alt="site_logo"
+                            class="font-medium text-3xl rounded-md w-12 h-10 bg-white">
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-2 font-medium text-2xl xl:text-base">
+                    <div class="form-control">
+                        <input type="text" placeholder="Search..."
+                            class="text-black text-sm px-4 py-2 md:px-6 w-40 rounded-md md:w-auto" />
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <a href="#">
+                            <img src="image/user.jpg" alt="admin_profile_pic" class="w-8 rounded-full">
+                        </a>
+                    </div>
+
+                    <div class="dropdown dropdown-end xl:hidden">
+                        <div tabindex="0" role="button"><i class="fa-solid fa-bars"></i></div>
+                        <ul tabindex="0" class="dropdown-content bg-red-600 menu rounded-box z-[1] w-52 p-2 shadow">
+                            <li><a href="dashboard-main.html">Dashboard</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="donors-list.html">Donors List</a></li>
+                            <li><a href="add-new-donors.html">Add new donor</a></li>
+                            <li><a href="approvals.html">Approvals</a></li>
+                            <li><a href="donation-list-date.html">Donation lists</a></li>
+                            <li><a href="user-list.html">User List</a></li>
+                            <hr>
+                            <li><a href="user-list.html">Logout<i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <!-- header small device section end -->
+
+
+    <!-- header large device section start -->
+    <div>
+        <section class="lg:flex">
+            <div class="hidden lg:block justify-between">
+                <aside class="sticky top-0 left-0 w-64 h-screen bg-blue-900 text-white flex flex-col">
+                    <div class="p-4 text-2xl font-bold text-center border-b border-blue-700">
+                        Admin Panel
+                    </div>
+                    <nav class="flex-1 p-4 space-y-2 text-[14px]">
+                        <a href="dashboard-main.html" class="block py-2 px-4 rounded hover:bg-blue-700">Dashboard</a>
+                        <hr class="opacity-30">
+                        <a href="profile.html" class="block py-2 px-4 rounded hover:bg-blue-700">Profile</a>
+                        <hr class="opacity-30">
+                        <a href="donors-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donors list (table
+                            of donors)</a>
+                        <hr class="opacity-30">
+                        <a href="add-new-donors.html" class="block py-2 px-4 rounded hover:bg-blue-700">Add new donor
+                            (Donor add form)</a>
+                        <hr class="opacity-30">
+                        <a href="approvals.html" class="block py-2 px-4 rounded hover:bg-blue-700">Approvals (Table of
+                            pending
+                            donors)</a>
+                        <hr class="opacity-30">
+                        <a href="donation-list-date.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donation
+                            lists (table of donor
+                            donate dates)</a>
+                        <hr class="opacity-30">
+                        <a href="user-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">User List (table of
+                            account
+                            users)</a>
+                        <hr class="opacity-30">
+                    </nav>
+                    <div class="p-4 border-t border-blue-700 text-[14px]">
+                        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-700 text-center">Logout<i
+                                class="fa-solid fa-arrow-right-from-bracket ml-3"></i></a>
+                    </div>
+                </aside>
+            </div>
+
+            <header class="p-4 flex-1">
+                <div class="hidden lg:block sticky top-0 z-50 backdrop-blur-md">
+                    <div class="sticky flex justify-between">
+                        <div class="flex gap-6">
+                            <a href="../index.html" target="_blank">
+                                <img src="image/logo.jpg" alt="llbd_logo" class="w-12 h-10 rounded-md">
+                            </a>
+                            <div class="relative">
+                                <input type="text"
+                                    class="border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                                    placeholder="Search...">
+                                <span class="absolute left-3 top-2.5 text-gray-400">
+                                    🔍
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <h1 class="font-medium">Admin</h1>
+                            <a href="#">
+                                <img src="image/user.jpg" alt="admin_profile_pic" class="w-8 rounded-full">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <section class="bg-[#F3F4F6] h-screen mt-6">
+                    <h1 class="md:flex items-center gap-4 px-4 pt-4 lg:text-2xl font-semibold">Welcome To The Dashboard
+                        <span>
+                            <img src="image/flower.gif" alt="flower_logo" class="w-10 rounded-full">
+                        </span>
+                    </h1>
+
+                    <!-- main section start -->
+                    <!-- Profile Dashboard -->
+                    <div class="bg-white max-w-4xl w-full mx-auto p-6 rounded-lg shadow-lg mt-16">
+                        <h1 class="font-semibold text-2xl pb-6 text-center">Admin Profile</h1>
+                        <hr class="pt-6">
+                        <!-- Profile Section -->
+                        <div class="flex flex-col md:flex-row items-center md:items-start">
+                            <!-- Profile Image and Edit Button -->
+                            <div class="relative mb-6 md:mb-0 md:mr-8">
+                                <img id="profileImage"
+                                    class="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-red-500"
+                                    src="image/flower.gif" alt="Profile Photo">
+                                <button onclick="toggleEditForm()"
+                                    class="absolute bottom-2 right-2 bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold p-2 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"
+                                        class="w-6 h-6">
+                                        <path
+                                            d="M15.7 2.3c-.4-.4-1-.4-1.4 0l-9 9-1.3 4.6 4.6-1.3 9-9c.4-.4.4-1 0-1.4L15.7 2.3zM5.5 15l1.3-1.3L5 12.5l-1.3 1.3 1.3 1.3 1.2-.1z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Profile Details -->
+                            <div>
+                                <h3 class="text-2xl font-semibold text-gray-800">Rezwanul Haque Nayem</h3>
+                                <p class="text-gray-500">Dhaka, Bangladesh</p>
+                                <div class="mt-4">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-600 font-medium">Blood Group:</span>
+                                        <span class="text-red-500 font-semibold">B+</span>
+                                    </div>
+                                    <div class="flex items-center justify-between mt-2">
+                                        <span class="text-gray-600 font-medium">Phone:</span>
+                                        <span class="text-gray-800">+880123456789</span>
+                                    </div>
+                                    <div class="flex items-center justify-between mt-2">
+                                        <span class="text-gray-600 font-medium">Email:</span>
+                                        <span class="text-gray-800">example@example.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact and Edit Buttons -->
+                        <div class="flex justify-end mt-6">
+                            <button
+                                class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-6 rounded-lg mr-4">Contact
+                                Now</button>
+                            <button onclick="toggleEditForm()"
+                                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg">Edit
+                                Profile</button>
+                        </div>
+                    </div>
+
+                    <!-- Edit Form Modal -->
+                    <div id="editFormModal"
+                        class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+                        <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Update Profile</h3>
+                            <form>
+                                <!-- Profile Image Upload -->
+                                <div class="mb-4 text-center">
+                                    <label class="block text-gray-700 font-medium mb-2">Profile Image</label>
+                                    <input type="file" id="imageUpload" class="block mx-auto"
+                                        onchange="loadImagePreview(event)">
+                                    <img id="imagePreview"
+                                        class="w-24 h-24 rounded-full border-2 border-gray-300 mt-2 hidden"
+                                        alt="Preview">
+                                </div>
+                                <!-- Name Input -->
+                                <div class="mb-4">
+                                    <label class="block text-gray-700">Name</label>
+                                    <input type="text"
+                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"
+                                        placeholder="Enter name">
+                                </div>
+                                <!-- Address Input -->
+                                <div class="mb-4">
+                                    <label class="block text-gray-700">Address</label>
+                                    <input type="text"
+                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"
+                                        placeholder="Enter address">
+                                </div>
+                                <!-- Blood Group Input -->
+                                <div class="mb-4">
+                                    <label class="block text-gray-700">Blood Group</label>
+                                    <input type="text"
+                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"
+                                        placeholder="Enter blood group">
+                                </div>
+                                <!-- Phone Input -->
+                                <div class="mb-4">
+                                    <label class="block text-gray-700">Phone</label>
+                                    <input type="tel"
+                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"
+                                        placeholder="Enter phone number">
+                                </div>
+                                <!-- Email Input -->
+                                <div class="mb-4">
+                                    <label class="block text-gray-700">Email</label>
+                                    <input type="email"
+                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"
+                                        placeholder="Enter email">
+                                </div>
+                                <!-- Save and Cancel Buttons -->
+                                <div class="flex justify-end">
+                                    <button type="button" onclick="toggleEditForm()"
+                                        class="bg-gray-500 text-white font-bold py-2 px-4 rounded-lg mr-2">Cancel</button>
+                                    <button type="submit"
+                                        class="bg-red-500 text-white font-bold py-2 px-4 rounded-lg">Save
+                                        Changes</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- main section end -->
+                </section>
+            </header>
+        </section>
+    </div>
+    <!-- header large device section end -->
+
+
+    <!-- simple js -->
+    <script>
+        function toggleEditForm() {
+            const modal = document.getElementById("editFormModal");
+            modal.classList.toggle("hidden");
+        }
+
+        function loadImagePreview(event) {
+            const imagePreview = document.getElementById("imagePreview");
+            imagePreview.src = URL.createObjectURL(event.target.files[0]);
+            imagePreview.classList.remove("hidden");
+        }
+    </script>
+</body>
+
+</html>
