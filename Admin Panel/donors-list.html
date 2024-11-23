@@ -92,17 +92,22 @@
                         <hr class="opacity-30">
                         <a href="profile.html" class="block py-2 px-4 rounded hover:bg-blue-700">Profile</a>
                         <hr class="opacity-30">
-                        <a href="donors-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donors list (table of donors)</a>
+                        <a href="donors-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donors list (table
+                            of donors)</a>
                         <hr class="opacity-30">
-                        <a href="add-new-donors.html" class="block py-2 px-4 rounded hover:bg-blue-700">Add new donor (Donor add form)</a>
+                        <a href="add-new-donors.html" class="block py-2 px-4 rounded hover:bg-blue-700">Add new donor
+                            (Donor add form)</a>
                         <hr class="opacity-30">
-                        <a href="approvals.html" class="block py-2 px-4 rounded hover:bg-blue-700">Approvals (Table of pending
+                        <a href="approvals.html" class="block py-2 px-4 rounded hover:bg-blue-700">Approvals (Table of
+                            pending
                             donors)</a>
                         <hr class="opacity-30">
-                        <a href="donation-list-date.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donation lists (table of donor
+                        <a href="donation-list-date.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donation
+                            lists (table of donor
                             donate dates)</a>
                         <hr class="opacity-30">
-                        <a href="user-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">User List (table of account
+                        <a href="user-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">User List (table of
+                            account
                             users)</a>
                         <hr class="opacity-30">
                     </nav>
@@ -144,91 +149,63 @@
                             <img src="image/flower.gif" alt="flower_logo" class="w-10 rounded-full">
                         </span>
                     </h1>
-                    <!-- <div class="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between px-4 py-8">
-                        <a href="#">
-                            <div
-                                class="bg-white rounded-lg p-4 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 hover:bg-violet-50">
-                                <div>
-                                    <h1 class="text-lg font-semibold">Total Donors</h1>
-                                    <p class="text-[#1E3A8A] text-3xl font-semibold mt-2">100+</p>
-                                </div>
-                                <div>
-                                    <img src="image/office-man.png" alt="user_icon" class="w-14 h-12">
-                                </div>
-                            </div>
-                        </a>
 
-                        <a href="#">
-                            <div
-                                class="bg-white rounded-lg p-4 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 hover:bg-blue-50">
-                                <div>
-                                    <h1 class="text-lg font-semibold">Total Users List</h1>
-                                    <p class="text-[#1E3A8A] text-3xl font-semibold mt-2">100+</p>
-                                </div>
-                                <div>
-                                    <img src="image/office-man.png" alt="user_icon" class="w-14 h-12">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#">
-                            <div
-                                class="bg-white rounded-lg p-4 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 hover:bg-yellow-50">
-                                <div>
-                                    <h1 class="text-lg font-semibold">Add New Donors</h1>
-                                    <p class="text-[#1E3A8A] text-3xl font-semibold mt-2">100+</p>
-                                </div>
-                                <div>
-                                    <img src="image/office-man.png" alt="user_icon" class="w-14 h-12">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#">
-                            <div
-                                class="bg-white rounded-lg p-4 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 hover:bg-orange-50">
-                                <div>
-                                    <h1 class="text-lg font-semibold">Approval</h1>
-                                    <p class="text-[#1E3A8A] text-3xl font-semibold mt-2">100+</p>
-                                </div>
-                                <div>
-                                    <img src="image/office-man.png" alt="user_icon" class="w-14 h-12">
-                                </div>
-                            </div>
-                        </a>
-                    </div> -->
                     <!-- main section start -->
                     <main class="px-4 mt-6">
                         <div class="bg-white p-4 md:p-6 rounded-lg shadow-md">
-                            <h2 class="text-xl md:text-2xl font-bold mb-4">Total Donors List</h2>
-                            <div class="overflow-x-auto">
-                                <table class="min-w-full border-collapse">
-                                    <thead>
+                            <div class="flex items-center justify-between mb-4">
+                                <h2 class="text-xl md:text-2xl font-bold">Total Donors List</h2>
+                                <a href="#">
+                                    <button
+                                        class="bg-red-500 text-white px-4 py-2 font-medium rounded-md transition duration-500 ease-in-out hover:bg-black shadow-2xl">
+                                        (<i class="fa-solid fa-plus"></i>) Add New</button>
+                                </a>
+                            </div>
+                            <div class="overflow-x-auto overflow-auto h-96">
+                                <table class="min-w-full h-48 border-collapse">
+                                    <thead
+                                        class="bg-white bg-opacity-75 backdrop-blur-md px-4 py-2 border-b border-gray-200 text-left sticky top-0">
                                         <tr>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Name</th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Blood Group</th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Location</th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Phone</th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Last Donation</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Id</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Name
+                                            </th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Blood
+                                                Group</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">
+                                                Location</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Gender
+                                            </th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Phone
+                                            </th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Join
+                                                Date</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Action
+                                            </th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr class="border-b">
-                                            <td class="p-3 text-sm md:text-base">John Doe</td>
-                                            <td class="p-3 text-sm md:text-base">A+</td>
-                                            <td class="p-3 text-sm md:text-base">New York</td>
-                                            <td class="p-3 text-sm md:text-base">01234567890</td>
-                                            <td class="p-3 text-sm md:text-base">01-08-2024</td>
-                                        </tr>
-                                        <tr class="border-b">
-                                            <td class="p-3 text-sm md:text-base">Jane Smith</td>
-                                            <td class="p-3 text-sm md:text-base">B-</td>
-                                            <td class="p-3 text-sm md:text-base">California</td>
-                                            <td class="p-3 text-sm md:text-base">01789456120</td>
-                                            <td class="p-3 text-sm md:text-base">01-09-2024</td>
-                                        </tr>
+                                    <tbody id="userTable">
+                                        <!-- Rows will be populated dynamically -->
                                     </tbody>
                                 </table>
+                            </div>
+                            <!-- Delete Confirmation Popup -->
+                            <div id="deletePopup"
+                                class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+                                <div class="bg-white p-6 rounded shadow-lg md:max-w-sm md:w-full w-80">
+                                    <p class="text-lg font-semibold">
+                                        Are you sure you want to delete <span id="userName"></span>?
+                                    </p>
+                                    <div class="mt-4 flex justify-end space-x-2">
+                                        <button onclick="confirmDelete()"
+                                            class="px-4 py-2 text-white bg-green-600 rounded hover:bg-green-700 transition">
+                                            Yes
+                                        </button>
+                                        <button onclick="cancelDelete()"
+                                            class="px-4 py-2 text-white bg-gray-600 rounded hover:bg-gray-700 transition">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </main>
@@ -238,6 +215,85 @@
         </section>
     </div>
     <!-- header large device section end -->
+
+    <!-- delete pop up js function -->
+    <script>
+        const users = [
+            { id: 1, name: 'Mahin', bloodGroup: 'A+', location: 'Dhaka', gender: 'Male', phone: '01712345678', joinDate: '01-01-2024' },
+            { id: 2, name: 'Rohim', bloodGroup: 'B-', location: 'Rajshahi', gender: 'Male', phone: '01798765432', joinDate: '02-01-2024' },
+            { id: 3, name: 'Karin', bloodGroup: 'O+', location: 'Bogura', gender: 'Female', phone: '01987654321', joinDate: '03-02-2024' },
+            { id: 4, name: 'Kabir', bloodGroup: 'AB+', location: 'Kusthia', gender: 'Male', phone: '01912345678', joinDate: '04-02-2024' },
+            { id: 5, name: 'Mizan', bloodGroup: 'A-', location: 'Jamalpur', gender: 'Male', phone: '01811223344', joinDate: '05-03-2024' },
+            { id: 6, name: 'Mahi', bloodGroup: 'B-', location: 'Bogura', gender: 'Female', phone: '01899887766', joinDate: '06-03-2024' },
+            { id: 7, name: 'Mariya', bloodGroup: 'O-', location: 'Bhola', gender: 'Female', phone: '01612345678', joinDate: '07-04-2024' },
+            { id: 8, name: 'Rakib', bloodGroup: 'AB-', location: 'Rangpur', gender: 'Male', phone: '01698765432', joinDate: '08-04-2024' },
+            { id: 9, name: 'Sakib', bloodGroup: 'A+', location: 'Jashore', gender: 'Male', phone: '01512345678', joinDate: '09-05-2024' },
+            { id: 10, name: 'Afif', bloodGroup: 'B+', location: 'Gaibandha', gender: 'Male', phone: '01599887766', joinDate: '10-05-2024' },
+            { id: 11, name: 'Aslam', bloodGroup: 'O+', location: 'Gobindhaganj', gender: 'Male', phone: '01765432198', joinDate: '11-06-2024' },
+            { id: 12, name: 'Shoriful', bloodGroup: 'AB+', location: 'Sirajgonj', gender: 'Male', phone: '01987456321', joinDate: '12-06-2024' },
+            { id: 13, name: 'Sadia', bloodGroup: 'A-', location: 'Kusthia', gender: 'Female', phone: '01876543219', joinDate: '13-07-2024' },
+            { id: 14, name: 'Rezwan', bloodGroup: 'B-', location: 'Coxs Bazar', gender: 'Male', phone: '01634567812', joinDate: '14-07-2024' },
+            { id: 15, name: 'Manik', bloodGroup: 'O-', location: 'Dinajpur', gender: 'Male', phone: '01556789012', joinDate: '15-08-2024' },
+            { id: 16, name: 'Nabil', bloodGroup: 'AB-', location: 'Naogaon', gender: 'Male', phone: '01788997766', joinDate: '16-08-2024' },
+            { id: 17, name: 'Orin', bloodGroup: 'A+', location: 'Pirojpur', gender: 'Female', phone: '01933445566', joinDate: '17-09-2024' },
+            { id: 18, name: 'Kalam', bloodGroup: 'B+', location: 'Sylhet', gender: 'Male', phone: '01844556677', joinDate: '18-09-2024' },
+            { id: 19, name: 'Asif', bloodGroup: 'O+', location: 'Feni', gender: 'Male', phone: '01699887766', joinDate: '19-10-2024' },
+            { id: 20, name: 'Maruf', bloodGroup: 'AB+', location: 'Khagrasori', gender: 'Male', phone: '01511223344', joinDate: '20-10-2024' },
+        ];
+
+        let currentUserId = null;
+
+        // Function to render users in the table
+        function renderUsers() {
+            const userTable = document.getElementById('userTable');
+            userTable.innerHTML = ''; // Clear table before rendering
+
+            users.forEach(user => {
+                const row = document.createElement('tr');
+                row.className = 'border-b';
+                row.innerHTML = `
+              <td class="p-3 text-sm md:text-base">${user.id}</td>
+              <td class="p-3 text-sm md:text-base">${user.name}</td>
+              <td class="p-3 text-sm md:text-base">${user.bloodGroup}</td>
+              <td class="p-3 text-sm md:text-base">${user.location}</td>
+              <td class="p-3 text-sm md:text-base">${user.gender}</td>
+              <td class="p-3 text-sm md:text-base">${user.phone}</td>
+              <td class="p-3 text-sm md:text-base">${user.joinDate}</td>
+              <td class="p-3 text-sm md:text-base flex gap-5">
+                <a href="update-donor-info.html" class="text-blue-600 hover:underline">Edit</a>
+                <button onclick="showPopup(${user.id}, '${user.name}')" class="text-red-600 hover:underline">Delete</button>
+              </td>
+            `;
+                userTable.appendChild(row);
+            });
+        }
+
+        // Show delete popup
+        function showPopup(id, name) {
+            currentUserId = id;
+            document.getElementById('userName').textContent = name;
+            document.getElementById('deletePopup').classList.remove('hidden');
+        }
+
+        // Confirm delete
+        function confirmDelete() {
+            const index = users.findIndex(user => user.id === currentUserId);
+            if (index !== -1) {
+                alert(`${users[index].name} has been deleted.`);
+                users.splice(index, 1);
+                renderUsers(); // Re-render table after deletion
+            }
+            document.getElementById('deletePopup').classList.add('hidden');
+        }
+
+        // Cancel delete
+        function cancelDelete() {
+            document.getElementById('deletePopup').classList.add('hidden');
+        }
+
+        // Initial rendering of the table
+        renderUsers();
+    </script>
 </body>
 
 </html>
